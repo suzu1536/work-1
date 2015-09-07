@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>propaganda_top</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/uraomote.css">
+    <link rel="stylesheet" href="css/mosaic.css">
+    
+    <script type="text/javascript" script src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" script src="js/bootstrap.js"></script>
+    
+   <link rel="stylesheet" href="css/animation.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.animation.min.js"></script>
+
+<script>
+$(function(){
+	//jQueryでフェードインさせるメインコンテンツを非表示に
+	$('head').append(
+	  '<style type="text/css">.overlay, .loading { display: block; }</style>'
+	);
+	$(window).on('load' , function(){
+		$('.overlay').delay(4500).fadeOut('100');
+		$('.loading').delay(100).fadeOut(fast);
+	})
+})
+$(".loading").fadeOut();
+    </script>
+
+    
+
+<style>
+    
+/*    パラパラ↓*/
+    #para {
+      margin-top: calc(50vh - 55px);
+      width: 100%;
+      height: 109px;
+      animation: moving 10s linear alternate-reverse infinite;
+    }
+    
+    @keyframes moving {
+      from {
+        margin-left: calc(100% - 80px);
+      }
+      /*←↓box自体を動かしたい場合はmarginを変更！*/
+      to {
+        margin-left: 100px;
+      }
+    }
+    
+    #parapara {
+      width: 100%;
+      height: 165px;
+      overflow: hidden;
+      background-image: url(images/parapara.png);
+      animation: para 5s steps(6, end) infinite;
+    }
+    
+    @keyframes para {
+      to {
+        background-position: -600px;
+      }
+    }
+/*パラパラ↑*/
+    /*↑animation↑*/
+
+  </style>
+</head>
+
+    
+<body>
+    
+    <div class="loading">
+       </div>
+<div class="overlay">
+    </div>
+    
+
+  <div id="main">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-menu">
+            <span class="sr-only">Toggle</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="mosaic.html"><img src="images/logo_2.jpg"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="my-menu">
+          <ul class="nav navbar-nav">
+            <li><a href="#news ">information</a></li>
+            <li><a href="#gallery_box">items</a></li>
+            <li><a href="#newitem">new</a></li>
+            <li><a href="#contents">foam</a></li>
+            <li><a href="#map">map</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span> 新規登録</a></li>
+            <li><a href="#">ログイン</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    <!--スライドショーここから-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/imgk.jpg" alt="イメージ1">
+          <div class="carousel-caption">
+            <h1>propaganda</h1>
+            <p>タイ生まれのデザインブランド</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/img_c.jpg" alt="イメージ2">
+          <div class="carousel-caption">
+            <h1>SENSE OF HUMOR ＆ UNPREDICTABILITY</h1>
+            <p>毎日の生活の「ちょっとしたこと」</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/img3.jpg" alt="イメージ3">
+          <div class="carousel-caption">
+            <h2>ユーモアのセンスと奇想天外</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/imgi.jpg" alt="イメージ4">
+          <div class="carousel-caption">
+            <h1>感情のある製品</h1>
+            <p>オリジナルキャラクターのMr.Pがキュート♡</p>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!--スライドショーここまで-->
+
+  <div id="main">
+    <div class="jumbotron">
+      <div id="click">
+        <h1>propaganda</h1>
+        <h3>ユーモア溢れる雑貨との出会い！　　今月のおすすめ！ ⇒</h3>
+      </div>
+      <div class="row">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#my-modal" pull right>
+          Click me!
+        </button>
+      </div>
+      <div id="my-modal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h2>How do you do?</h2>
+              <div class="thumbnail">
+                <img src="images/img15.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    </div>-->
+
+
+
+    <!--  <div id="para">-->
+    <div id="parapara"></div>
+    <!--  </div>-->
+
+
+    <div class id="news">
+      <section>
+        <h3>【 新 着 記 事 】</h3>
+        <ul>
+          <li>
+            <time datetime="2015-07-15">平成27年07月15日</time>キーホルダー入荷しました！</li>
+          <li>
+            <time datetime="2015-06-15">平成27年06月15日</time>ダストボックス全色入荷しましたよ～</li>
+          <li>
+            <time datetime="2015-05-10">平成27年05月10日</time>MR.Pのジャンボぬいぐるみ入荷！個数限定！</li>
+          <li>
+            <time datetime="2015-01-2">平成27年01月02日</time>福袋売り出します！</li>
+        </ul>
+      </section>
+    </div>
+
+
+    <div class="type-stripe"></div>
+
+
+    <div class="gallery_box" id="gallery_box">
+      <figure>
+        <figcaption>☆ブックマーカー☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img7.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img7_3.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption>☆クリップケース☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img8_2.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img8_1.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption>☆ステープラー☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img9.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img9_1.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption>☆ナイフケース☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img18.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img18_3.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="gallery_box">
+      <figure>
+        <figcaption>☆ランプ☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img12.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img12_4.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+        <img src="images/img12.jpg" alt="ランプ">
+      </figure>
+      <figure>
+        <figcaption>☆ダストbox☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img17_2.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img17_3.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption>☆メモマグネット☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img13.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img13_2.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption>☆ティッシュケース☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img19.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img19_2.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="gallery_box">
+      <figure>
+        <figcaption><span class="badge" id="newitem">New</span>　☆キャンドル☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img20.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img20_1.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption><span class="badge">New</span>　☆ブックバンド☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img14.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img14_1.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption><span class="badge" id="newitem">New</span>　☆セロテープ☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img16_1.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img16_2.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption><span class="badge" id="newitem">New</span>　☆ステープラー☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img10.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img11.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <div class="gallery_box">
+      <figure>
+        <figcaption><span class="badge" id="newitem">New</span>　☆ハンド型マドラー☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img25_2.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img25.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption><span class="badge">New</span>　☆トイレペーパーbox☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img23.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img23_1.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption><span class="badge">New</span>　☆マッチ棒ランプ☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img21_1.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img21.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure>
+        <figcaption><span class="badge">New</span>　☆ハンド型ストレーナー☆</figcaption>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front" style="background: url(images/img24.jpg) 0 0 no-repeat;">
+            </div>
+            <div class="back" style="background: url(images/img24_2.jpg) 0 0 no-repeat;">
+            </div>
+          </div>
+        </div>
+      </figure>
+    </div>
+  </div>
+  <!--   #main-->
+
+
+  <div id="sub">
+    <div id="contents">
+      <article>
+        <h3><img src="images/neko-rain2.jpg">【お問い合わせ】<img src="images/neko-rain2.jpg"></h3>
+        <p>　　　★商品の入荷情報など、お気軽にお問い合わせください★　</p>
+        <ul>
+          <li>必要事項を記入し、「確認する」をクリックしてください。</li>
+          <li>ご記入いただいた個人情報は、お問い合わせの回答以外には使用いたしません。</li>
+        </ul>
+        <form action="#">
+          <p>
+            <label>お名前（必須）
+              <br>
+              <input type="text" name="name" required>
+            </label>
+          </p>
+          <p>
+            <label>メールアドレス（必須）
+              <br>
+              <input type="email" name="mail" required>
+            </label>
+          </p>
+          <p>
+            <label>お問い合わせ種類</label>
+            <br>
+            <label>
+              <input type="radio" name="kind" value="0">商品について</label>
+            <label>
+              <input type="radio" name="kind" value="1">購入方法、送料について</label>
+            <label>
+              <input type="radio" name="kind" value="2">その他</label>
+          </p>
+          <p>
+            <label>お問い合わせ内容
+              <br>
+              <textarea name="message"></textarea>
+            </label>
+          </p>
+          <p>
+            <input type="submit" value="確認する">
+          </p>
+        </form>
+      </article>
+    </div>
+
+    <div style="position: relative;" id="image">
+      <img src="images/img5_1.jpg" width="500" height="600" alt="Mr.p遺跡">
+      <br>
+      <div style="position: absolute; top: 90px; left: 25px; width: 450px;">
+        Propagandaは、今年2012年で19年目となる
+        <br>タイ生まれのデザインブランドです。
+        <br>
+        <br>タイのテレビコマーシャルの製作会社に
+        <br>勤めていたデザイナー2人を含む4人によって
+        <br>1994年に設立されました。
+        <br>
+        <br>日常生活で使う身近な製品を形に変えていく作業の中で、
+        <br>タイ人が持つ独特の茶目っ気とユーモアあるものの見方に気づき、
+        <br>自国のデザイナーが優れた才能を持っていることを発見しました。
+        <br>
+        <br>彼らは毎日の生活の「ちょっとしたこと」から
+        <br>「SENSE OF HUMOR ＆ UNPREDICTABILITY」
+        <br>（ユーモアのセンスと奇想天外）をテーマにし、
+        <br>そこに何かしらの面白みを加えることで、
+        <br>感情のある製品を作り出しています。
+        <br>
+        <br>ブランド設立から2年後には、
+        <br>バンコクにショップをオープンし、瞬く間に人気となり、
+        <br>その後、国際的な活動を展開しています。
+      </div>
+    </div>
+
+  </div>
+  <!--  #sub-->
+
+  <div id="footer">
+    <div class="inner">
+      <div class="page-back">
+          <a href="#top"><img src="images/yajirusi.png">ページの先頭へ戻る</a></div>
+      <div id="map">
+        <span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6647.612778526331!2d130.39747822427327!3d33.584375849491316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1439950427044" width="300" height="230" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+      </span>
+      </div>
+      <div id="info">
+        <h4>PROPAGANDA本店　東京都千代田区X-X-X</h4>
+        <h7>電話 0120-000-XXX　　営業時間 11:00～20:00(水曜日定休)</h7>
+        <br>
+        <div id="tenpo">
+          <ul>
+            <br>
+            <li>■PROPAGANDA　札幌パルコ店　℡xxx-xxx-xxxx</li>
+            <li>■PROPAGANDA　仙台パルコ店　℡xxx-xxx-xxxx</li>
+            <li>■PROPAGANDA　渋谷パルコ店　℡xxx-xxx-xxxx</li>
+            <li>■PROPAGANDA　静岡パルコ店　℡xxx-xxx-xxxx</li>
+            <li>■PROPAGANDA　広島パルコ店　℡xxx-xxx-xxxx</li>
+            <li>■PROPAGANDA　福岡パルコ店　℡xxx-xxx-xxxx</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="copyright"><small><a>Copyright (C) 2013-2014 propaganda.com</a></small></div>
+
+</body>
+</html>

@@ -1,0 +1,491 @@
+@charset "utf-8";
+html {
+  width: 100%;
+  margin: 0;
+  /*←謎!?のマージンがいるので、0数値で消しておく*/
+}
+
+/*
+img{
+    max-width: 100%;
+	height:auto;
+}
+*/
+#container{display:none;}
+
+.loading{
+    margin-left: -50px;
+	position: fixed;
+    left: 50%;
+	top: 40%;
+	z-index: 3;
+}
+.overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+    position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: none;
+	z-index: 2;
+	width: 310px;
+  height: 300px;
+  background: url(../images/mosaic.png);
+  background-position: -1860px;
+    border-radius: 150px;
+  
+   -webkit-animation-name: gif;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: steps(7,start);
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: gif 1s steps(7,start) 1.5s 1 forwards;
+  -ms-animation: gif 1s steps(7,start) 1.5s 1 forwards;
+  -o-animation: gif 1s steps(7,start) 1.5s 1 forwards;
+  animation: gif 1s steps(7,start) 1.5s 1 forwards;
+}
+  @-webkit-keyframes gif{
+  0% {background-position: -2170px}
+  100% {background-position: 1px}
+  }
+  @-moz-keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 1px}
+  }
+  @-ms-keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 1px}
+  }
+  @-o-keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 1px}
+  }
+  @keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 0}
+  }}
+/*
+.loading , .overlay {
+    display: none;
+}
+*/
+
+
+/*
+.mosaic{
+  width: 310px;
+  height: 300px;
+  background: url(../images/mosaic.png);
+    background-color: #fff;
+  background-position: -1860px;
+  position: absolute; 
+  margin: auto; 
+  top: 0; left: 0; bottom: 0; right: 0;
+  border: none;
+*/
+
+    
+/*
+   
+  shorthand would be 
+  -webkit-animation: gif 1s steps(17,start) 1.5s 1 forwards; 
+  but that does not work with safari.
+  
+  
+  -webkit-animation-name: gif;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: steps(7,start);
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation: gif 1s steps(7,start) 1.5s 1 forwards;
+  -ms-animation: gif 1s steps(7,start) 1.5s 1 forwards;
+  -o-animation: gif 1s steps(7,start) 1.5s 1 forwards;
+  animation: gif 1s steps(7,start) 1.5s 1 forwards;
+}
+  
+  @-webkit-keyframes gif{
+  0% {background-position: -2170px}
+  100% {background-position: 1px}
+  }
+
+  @-moz-keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 1px}
+  }
+
+  @-ms-keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 1px}
+  }
+
+  @-o-keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 1px}
+  }
+
+  @keyframes gif{
+  from{background-position: -2170px}
+  to{background-position: 0}
+  }
+*/
+
+
+
+#main {
+  position: relative;
+}
+
+.carousel slide {
+  width: auto;
+}
+#foo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*←widthは「vw」にするとスクロールバーがでなくなるので結果邪魔になる場合がある為、％指定の方が良い*/
+  /*    height: 100%;  ←heigthtは外側の親要素サイズ（html、body）が決まってないと％は使えない*/
+  height: 100vh;
+  /*←「vh」だとウィンドウのサイズを基本にしているので、外側要素を設定しなくても使える！*/
+  background-color: cadetblue;
+  animation: fadeout 1s 5s both;
+  /*★←animationが5秒たってから0.5秒間実行､both(両方)でanimation後の状態をキープ★*/
+  text-align: center;
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*★←visibility: hiddenを設定する合わせ技で、見えていないけど存在するdivを隠して下の要素リンクなどがさわれる！★*/
+}
+@keyframes fadein {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*★←visibility: hiddenを設定する合わせ技で、見えていないけど存在するdivを隠して下の要素リンクなどがさわれる！★*/
+}
+
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-header a img {
+  background-size: 85%;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+.navbar-nav li a {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.jumbotron {
+  width: 1000px;
+  height: 160px;
+  border: none;
+  margin: 20px auto auto auto;
+  padding: 10px 10px;
+  padding-left: 100px;
+  padding-right: 0;
+}
+#click {
+  display: inline;
+  float: left;
+  margin-bottom: 10px;
+}
+.row {
+  margin-top: 100px;
+  /*  vertical-align: middle;*/
+}
+#parapara {
+  padding-top: 15px;
+}
+#news {
+  width: 950px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 45px;
+}
+#news section h3 {
+  margin: 50px auto 5px auto;
+}
+#news ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#news ul li {
+  padding: 20px 0 20px 175px;
+  border-bottom: 1px dotted #6c5f45;
+  color: #342300;
+  text-indent: -100px;
+  padding: 0 auto;
+}
+#news ul li time {
+  display: inline-block;
+  width: 160px;
+  font-weight: bold;
+  color: dimgray;
+  text-indent: 0
+}
+.jumbotron .row {
+  width: 100px;
+  margin-left: 750px;
+}
+.btn btn-primary {
+  border-top: 0;
+  border-bottom: 20px;
+}
+.carousel-inner img {
+  width: 100%;
+}
+.main-content .content-area {
+  padding: 20px 15px;
+}
+
+/*動くストライプバー*/
+.type-stripe {
+  height: 10px;
+  background: linear-gradient(-45deg, #3498DB 25%, #fff 25%, #fff 50%, #3498DB 50%, #3498DB 75%, #fff 75%, #fff);
+  -webkit-animation: stripeBg 10s linear infinite;
+  background-size: 20px 20px;
+  border: 1px solid #3498DB;
+}
+@-webkit-keyframes stripeBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+/*動くストライプバーここまで*/
+
+
+/*ギャラリー*/
+.gallery_box {
+  overflow: hidden;
+  width: 1188px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.gallery_box figure {
+  margin: 20px 20px auto auto;
+  width: 282px;
+  height: 352px;
+  float: left;
+  border: #666 dotted thin;
+}
+.gallery_box figure:first-child {
+  margin-left: 0;
+  /*    padding: 5px auto auto 5px;*/
+}
+.gallery_box figure:last-child {
+  margin-right: 0;
+}
+.gallery_box figcaption {
+  background-color: #5ECADD;
+}
+/*ギャラリーここまで*/
+
+#sub {
+  width: 1188px;
+  height: 650px;
+    margin-right: auto;
+  margin-left: auto;
+}
+#contents {
+  /*    overflow: hidden;*/
+  float: left;
+  width: 560px;
+  margin: 20px auto 30px auto;
+}
+form article {
+  margin-left: 85px;
+  margin-top: 55px;
+  background-image: url(../images/neko-rain2.jpg);
+  background-repeat: no-repeat;
+}
+form p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+form p:nth-last-child(2) {
+  margin-bottom: 2px;
+}
+form p:last-child {
+  margin-bottom: 0;
+}
+input[required] {
+  background-color: paleturquoise;
+}
+input,
+textarea {
+  margin-top: 4px;
+}
+sinput[type="text"] {
+  width: 300px;
+}
+input[type="email"] {
+  width: 400px;
+}
+textarea {
+  width: 480px;
+  height: 115px;
+  overflow-y: scroll;
+}
+
+#image {
+  float: right;
+  margin: 30px 30px auto 10px;
+  color: #fff;
+  text-align: center;
+  font-family: serif;
+  font-size: 105%;
+  font-weight: bold;
+}
+#image img {
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+}
+
+
+/*
+#pagetop {
+  margin-bottom: 0;
+  float: right;
+}
+#pagetop a {
+  display: block;
+  padding-left: 10px;
+  min-height: 16px;
+  padding: 15px 0 10px 30px;
+  background: url(../images/yajirusi.png) left center no-repeat;
+}
+*/
+
+.page-back {
+ position: fixed;
+ bottom: 10px;
+ right: 10px;
+}
+
+/* IE6用ハック */
+* html, * html body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+ overflow-y: hidden;
+}
+ * html div#body-inner {
+ height: 100%;
+ overflow-y: scroll;
+}
+ * html div.page-back {
+ position: absolute;
+ right: 30px;
+}
+
+
+
+#footer {
+  width: 100%;
+  border-top: 10px solid paleturquoise;
+  height: 300px;
+  padding: 10px 0;
+}
+
+.inner {
+  width: 1188px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  position: relative;
+  height: 280px;
+}
+
+#info {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  left: 550px;
+  margin-top: 50px;
+  background: #008BBB;
+  color: #fff;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  text-align: center;
+}
+
+#tenpo ul li {
+  list-style: none;
+  color: #000;
+  font-size: 100%;
+  margin-left: 30px;
+}
+
+#map {
+  position: absolute;
+  left: 130px;
+  top: 10px;
+  margin-top: -26px;
+  overflow: hidden;
+  /* 不要部分を消す */
+  padding: 6px;
+  /* 6px だけは写真からはみ出す */
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+}
+#map span iframe {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+#map span:before,
+#map span:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 97px;
+  height: 50px;
+  background: #fff;
+  /* 背景色 */
+  transform: rotate(-30deg);
+}
+/* 左上 */
+#map span:before {
+  box-shadow: 0 10px 8px -12px rgba(0, 0, 0, 0.8);
+  top: -24px;
+  bottom: auto;
+  right: auto;
+  left: -26px;
+}
+/* 右下 */
+#map span:after {
+  box-shadow: 0 -10px 10px -10px rgba(0, 0, 0, 0.7);
+  top: auto;
+  bottom: -22px;
+  right: -25px;
+  left: auto;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 100%;
+  margin-bottom: 5px;
+}
